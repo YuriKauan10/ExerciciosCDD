@@ -1,6 +1,10 @@
-print("FATORIAL DE UM NUMERO: ")
-
 numero = int(input("Digite um número para calcular sua fatorial: "))
 
-for i in range(1, numero + 1, ):
-    print(numero)
+conta = numero
+print(numero, end = "")
+for i in range(numero - 1, 0, -1):
+    conta *= i
+    print(f" * {i}", end = "")
+
+print(f"= {conta}")
+
