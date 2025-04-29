@@ -1,9 +1,10 @@
-quantidade = int(input("Digite seu número: "))
+nomes = [""]*5
 
-for i in range(1, quantidade + 1):
-    # Calcula o número de espaços necessários para centralizar
-    espaços = quantidade - i
-    # Cria uma linha com os asteriscos separados por espaço
-    linha = " ".join("*" * i)
-    # Imprime os espaços seguidos da linha com asteriscos
-    print(" " * espaços + linha)
+for i in range(len(nomes)):
+    nomes[i] = input("Digite um nome: ")
+
+
+print(nomes)
+
+for i in range(len(nomes)):
+   print(i, nomes[i])
