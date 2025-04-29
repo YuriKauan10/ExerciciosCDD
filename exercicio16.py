@@ -1,21 +1,19 @@
-usuario = [""] * 2
-senha = [""] * 2
-
-for i in range(len(usuario)):
-    usuario[i] = input("Digite o usuário para cadastro: ")
-    senha[i] = int(input("Digite sua senha para cadastro: "))
+usuario = ["joao", "carlos", "mario"]
+senha = [1234,3432,5432]
 
 usuarioLogin = input("Digite seu usuário para login: ")
 senhaLogin = int(input("Digite sua senha para login: "))
 
-login_sucesso = False
+
+msg = ""
 
 for i in range(len(usuario)):
     if usuarioLogin == usuario[i] and senhaLogin == senha[i]:
-        login_sucesso = True
+        msg = "Login efetuado"
         break
-if login_sucesso:
-    print("Login efetuado com sucesso")
+
+if msg == "Login efetuado":
+    print(msg)
 else:
     print("Login incorreto")
 
