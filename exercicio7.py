@@ -1,4 +1,9 @@
-x = int(input("DIGITA UM NÚMERO: "))
+nomes = ["joao","maria","yuri","carlos","marta"]
 
-for i in range(1, x + 1, 1):
-    print(i)
+pedido = input("Digite um nome para encontrar: ")
+
+for i in range(len(nomes)):
+    if nomes[i] == pedido:
+        print(f"Nome {pedido} encontrado no índice {i}")
+        break
+
